@@ -1,0 +1,35 @@
+html
+    head
+        style.
+            .item,
+            .tile {
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                background: #000;
+            }
+            .item {
+                background: #ccc;
+            }
+
+            .map {
+                 position: relative;
+            }
+
+            .tile {
+                background: #000;
+            }
+
+            .tile.walkable {
+                background: #fff
+            }
+
+    body
+        h1 Map
+        pre= JSON.stringify({ distances }, null, 4)
+        .map
+            each row in grid.nodes
+                each node in row
+                    .tile(style=({ left: node.x * 32, top:  node.y * 32 }) class=({ walkable: node.walkable }))
+            each item in items
+                .item(style=({ left: item.x * 32, top:  item.y * 32 }))= item.id

@@ -1,0 +1,24 @@
+{
+  "name": "twometers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatanpedersen/twometers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatanpedersen/twometers/issues"
+  },
+  "homepage": "https://github.com/jonatanpedersen/twometers#readme",
+  "dependencies": {
+    "express": "4.17.1",
+    "pathfinding": "0.4.18",
+    "pug": "2.0.4"
+  }
+}
